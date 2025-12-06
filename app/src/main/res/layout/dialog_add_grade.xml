@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/circle_white">
+
+    <TextView
+        android:id="@+id/tvDialogGradeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Grade"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/etDialogGradeCourseCode"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Course Code (e.g., CC106)"
+        android:textColorHint="@color/purple_light"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_marginBottom="16dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/etDialogGradeCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Course Name"
+        android:textColorHint="@color/purple_light"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_marginBottom="16dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/etDialogGradeValue"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Grade (e.g., A+, B, 1.0)"
+        android:textColorHint="@color/purple_light"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_marginBottom="16dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/etDialogGradeUnits"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Units (e.g., 3.0)"
+        android:textColorHint="@color/purple_light"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_marginBottom="24dp"
+        android:inputType="numberDecimal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btnGradeCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/purple_primary"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnGradeSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:background="@drawable/button_gradient"/>
+
+    </LinearLayout>
+
+</LinearLayout>
